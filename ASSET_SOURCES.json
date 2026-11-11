@@ -1,0 +1,66 @@
+{
+  "observed_at": "2026-11-11",
+  "source_page": "https://m.place.naver.com/place/2096351642/photo?filterType=업체",
+  "assets": [
+    {
+      "file": "training.jpg",
+      "description": "트레이닝룸",
+      "original_url": "https://ldb-phinf.pstatic.net/20260831_241/1788185241792S9xqo_JPEG/IMG_8816.jpg",
+      "source": "네이버 플레이스 업체 등록 사진",
+      "synthetic": false,
+      "transform": "none; original size JPEG delivered by Naver image proxy",
+      "sha256": "3d3a9fd67a363b2749ab216ada3bb66741cdf5d77169d86ce7dcf7450c1479a8",
+      "visual_verification": "scene verified with view_image by coordinator"
+    },
+    {
+      "file": "studio.jpg",
+      "description": "바레 스튜디오",
+      "original_url": "https://ldb-phinf.pstatic.net/20260903_43/1788424208188Vjpyd_JPEG/IMG_8270.jpg",
+      "source": "네이버 플레이스 업체 등록 사진",
+      "synthetic": false,
+      "transform": "none; original size JPEG delivered by Naver image proxy",
+      "sha256": "277dd797d3c1857580a1bd209dba6bc3da1f4c6731070e51897b429db2e48835",
+      "visual_verification": "scene verified with view_image by coordinator"
+    },
+    {
+      "file": "recovery.jpg",
+      "description": "사우나와 콜드 플런지",
+      "original_url": "https://ldb-phinf.pstatic.net/20260903_129/1788424207836fK8Vg_JPEG/IMG_8252.jpg",
+      "source": "네이버 플레이스 업체 등록 사진",
+      "synthetic": false,
+      "transform": "none; original size JPEG delivered by Naver image proxy",
+      "sha256": "f2ef5e31620cced518587c047305a99c50fac88cdc37ee47fce809f625f8af4f",
+      "visual_verification": "scene verified with view_image by coordinator"
+    },
+    {
+      "file": "sauna.jpg",
+      "description": "우드 사우나",
+      "original_url": "https://ldb-phinf.pstatic.net/20260903_16/1788424208176unxrx_JPEG/IMG_8253.jpg",
+      "source": "네이버 플레이스 업체 등록 사진",
+      "synthetic": false,
+      "transform": "none; original size JPEG delivered by Naver image proxy",
+      "sha256": "40d87ad731294d5a40e0e4a382c42badafa43437a40e7d009fe135eca32a36ac",
+      "visual_verification": "scene verified with view_image by coordinator"
+    },
+    {
+      "file": "plunge.jpg",
+      "description": "콜드 플런지",
+      "original_url": "https://ldb-phinf.pstatic.net/20260903_37/1788424208143c1Cwv_JPEG/IMG_8257.jpg",
+      "source": "네이버 플레이스 업체 등록 사진",
+      "synthetic": false,
+      "transform": "none; original size JPEG delivered by Naver image proxy",
+      "sha256": "c930929939685b988e71fab3bdb7f8d255c2332d9c03beb2fef065f2f6aaa921",
+      "visual_verification": "scene verified with view_image by coordinator"
+    },
+    {
+      "file": "locker.jpg",
+      "description": "라커룸",
+      "original_url": "https://ldb-phinf.pstatic.net/20260903_96/1788424208077M6cdi_JPEG/IMG_8249.jpg",
+      "source": "네이버 플레이스 업체 등록 사진",
+      "synthetic": false,
+      "transform": "none; original size JPEG delivered by Naver image proxy",
+      "sha256": "91992bf615fba4d1fa4b597a7eabbe09b31b63b1f6014386fe78088a4c8d9226",
+      "visual_verification": "scene verified with view_image by coordinator"
+    }
+  ]
+}
