@@ -22,6 +22,15 @@ HTML, CSS, JavaScript만 사용하는 정적 사이트입니다. 각 시안에�
 
 ## 게시와 검토
 
-별도 빌드 없이 정적 파일을 GitHub Pages에서 제공합니다. 게시용 폴더에서는 HTML과 사진을 같은 경로에 둡니다. GitHub Pages 설정은 `Deploy from a branch` → `main` → `/(root)`입니다.
+프로젝트 소스는 이 저장소의 `main` 브랜치에서 관리합니다. `main`에 push하면 GitHub Actions가 `scripts/package.py`를 실행해 `publish/`에 게시 파일 15개를 만들고 GitHub Pages에 배포합니다. 게시용 폴더에서는 HTML과 사진을 같은 경로에 둡니다. GitHub Pages의 Source 설정은 `GitHub Actions`입니다.
+
+```sh
+python3 scripts/package.py
+git add <수정한 파일>
+git commit -m "Update website proposals"
+git push origin main
+```
+
+`scripts/deploy.py`는 커밋된 소스와 로컬 패키징을 확인한 뒤 `main`을 push하는 보조 명령입니다. QA, 비공개 참고 자료, 생성된 `publish/` 및 ZIP 파일은 Git 추적과 Pages 게시에서 제외합니다. 배포 완료 여부는 저장소 Actions의 `Deploy GitHub Pages` 실행에서 확인합니다.
 
 현재는 디자인 검토 단계이며 각 페이지에 `noindex,nofollow`를 지정했습니다. 최종 안을 정한 뒤 프로그램별 안내와 운영 정보를 확정하고 정식 홈페이지로 정리할 수 있습니다.

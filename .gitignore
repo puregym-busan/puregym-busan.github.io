@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+__pycache__/
+.env
+.env.*
+!.env.example
+.private/
+.codebase-memory/
+qa/
+publish/
+puregym-proposals.zip
+*.log
