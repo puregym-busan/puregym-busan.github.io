@@ -91,6 +91,12 @@
     .address-label,.viewer-top .eyebrow,.viewer-counter,.mobile-menu nav a span,
     .gallery-note span:last-child{font-size:12px}
     .hero{height:auto;max-height:none;min-height:max(780px,calc(100svh - 32px))}
+    /* Shade the copy area while preserving the training room photograph. */
+    .hero:after{opacity:1;background:linear-gradient(90deg,rgba(9,13,9,.24) 0%,rgba(9,13,9,.22) 40%,rgba(9,13,9,.6) 76%,rgba(9,13,9,.72) 100%),linear-gradient(0deg,rgba(9,13,9,.68) 0%,rgba(9,13,9,0) 48%)}
+    .hero-intro,.hero-bottom{color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.28)}
+    .hero-intro h1{font-weight:500}
+    .hero-intro p{color:#fff}
+    .hero-intro .text-link{border-color:rgba(255,255,255,.65);font-weight:500}
     .hero-main>*,.program-layout>*,.recovery-head>*,.visit-top>*{min-width:0}
     .text-link,.outline-link{min-height:48px}
     .hero-bottom,.program-caption,.gallery-note,.visit-contact,.visit-bottom,
@@ -114,6 +120,7 @@
     .preview-bar span{white-space:normal}
     @media(max-width:800px){
       .hero{min-height:max(870px,calc(100svh - 32px))}
+      .hero:after{background:linear-gradient(180deg,rgba(9,13,9,.24) 0%,rgba(9,13,9,.28) 30%,rgba(9,13,9,.7) 68%,rgba(9,13,9,.86) 100%)}
       .hero-intro{max-width:600px;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
       .section-top .section-intro{max-width:280px}
       .footer-slogan{font-size:14px}
