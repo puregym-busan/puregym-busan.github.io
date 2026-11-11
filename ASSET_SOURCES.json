@@ -61,6 +61,16 @@
       "transform": "none; original size JPEG delivered by Naver image proxy",
       "sha256": "91992bf615fba4d1fa4b597a7eabbe09b31b63b1f6014386fe78088a4c8d9226",
       "visual_verification": "scene verified with view_image by coordinator"
+    },
+    {
+      "file": "bikes.jpg",
+      "description": "에어바이크 트레이닝 공간",
+      "original_url": "https://ldb-phinf.pstatic.net/20260903_110/1788424208248F4fsp_JPEG/IMG_8285.jpg",
+      "source": "네이버 플레이스 업체 등록 사진",
+      "synthetic": false,
+      "transform": "none; original size JPEG delivered by Naver image proxy",
+      "sha256": "1c6b34205ca8abb1d2347bf1c0a00a9d8f577c0e367a2fc1b57a6af60d5749a7",
+      "visual_verification": "scene verified with view_image by coordinator"
     }
   ]
 }
