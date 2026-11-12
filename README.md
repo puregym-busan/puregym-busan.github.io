@@ -8,12 +8,13 @@
 | `concept-a.html` | The Wellness House — 크림색 바탕과 시설 사진을 중심으로 한 차분한 구성 |
 | `concept-b.html` | After the Effort — 트레이닝룸의 존재감과 운동 후 휴식을 강조한 구성 |
 | `concept-c.html` | The Daily Ritual — 요가·바레부터 트레이닝과 회복까지 소개하는 매거진 형식 |
+| `spaces.html` | A안과 연결되는 시설 둘러보기 — 공간별 사진 18장과 확대 보기 |
 
 HTML, CSS, JavaScript만 사용하는 정적 사이트입니다. 각 시안에서 프로그램, 시설 사진, 방문 안내를 확인할 수 있으며 문의는 기존 네이버 플레이스·Instagram·전화로 연결됩니다.
 
 ## 사진과 정보
 
-시설 사진은 퓨어짐 부산 네이버 플레이스의 업체 등록 사진을 사용했습니다. 생성 이미지는 사용하지 않았습니다. 사진 원본 주소와 SHA-256 해시는 `ASSET_SOURCES.json`에 기록했습니다.
+시설 사진은 네이버 플레이스의 업체 등록 사진과 코치가 제공한 실제 시설 사진을 사용했습니다. A안과 시설 둘러보기에는 2026년 11월 12일 전달받은 사진 중 18장을 선정해 적용했습니다. 생성 이미지는 사용하지 않았습니다. 사진의 출처, 변환 내용과 SHA-256 해시는 `ASSET_SOURCES.json`에 기록했습니다.
 
 - [네이버 플레이스](https://m.place.naver.com/place/2096351642/home)
 - [Instagram](https://www.instagram.com/puregym.busan/)
@@ -22,7 +23,7 @@ HTML, CSS, JavaScript만 사용하는 정적 사이트입니다. 각 시안에�
 
 ## 게시와 검토
 
-프로젝트 소스는 이 저장소의 `main` 브랜치에서 관리합니다. `main`에 push하면 GitHub Actions가 `scripts/package.py`를 실행해 `publish/`에 게시 파일 15개를 만들고 GitHub Pages에 배포합니다. 게시용 폴더에서는 HTML과 사진을 같은 경로에 둡니다. GitHub Pages의 Source 설정은 `GitHub Actions`입니다.
+프로젝트 소스는 이 저장소의 `main` 브랜치에서 관리합니다. `main`에 push하면 GitHub Actions가 `scripts/package.py`를 실행해 `publish/`에 게시 파일을 만들고 GitHub Pages에 배포합니다. 게시용 폴더에서는 HTML과 사진을 같은 경로에 둡니다. GitHub Pages의 Source 설정은 `GitHub Actions`입니다.
 
 ```sh
 python3 scripts/package.py
