@@ -9,6 +9,7 @@
 | `concept-a.html` | 기존 공유 주소 호환용 — 쿼리·앵커를 유지해 index.html로 이동 |
 | `concept-b.html` | After the Effort — 트레이닝룸의 존재감과 운동 후 휴식을 강조한 구성 |
 | `concept-c.html` | The Daily Ritual — 요가·바레부터 트레이닝과 회복까지 소개하는 매거진 형식 |
+| `guide.html` | 하이록스·웨이트·요가·바레 수업, 첫 예약, 자주 묻는 질문, 위치·주차 안내 |
 | `spaces.html` | 메인 홈페이지와 연결되는 시설 둘러보기 — 공간별 사진 20장과 확대 보기 |
 
 HTML, CSS, JavaScript만 사용하는 정적 사이트입니다. 메인에서 프로그램, 시설 사진 13장, 첫 방문 및 주차 안내를 확인할 수 있으며 문의는 기존 네이버 플레이스·Instagram·전화로 연결됩니다.
@@ -35,4 +36,17 @@ git push origin main
 
 `scripts/deploy.py`는 커밋된 소스와 로컬 패키징을 확인한 뒤 `main`을 push하는 보조 명령입니다. QA, 비공개 참고 자료, 생성된 `publish/` 및 ZIP 파일은 Git 추적과 Pages 게시에서 제외합니다. 배포 완료 여부는 저장소 Actions의 `Deploy GitHub Pages` 실행에서 확인합니다.
 
-메인과 시설 페이지에는 기본 공개 주소를 canonical로 지정했습니다. 기존 시안 비교 및 B·C안은 `noindex,nofollow`로 보존하며 홈페이지 메뉴에는 노출하지 않습니다. 기존 `concept-a.html` 공유 링크는 기본 홈페이지로 이동합니다.
+메인·시설·수업 안내 세 페이지에는 각각 공개 주소를 canonical로 지정했습니다. 기존 시안 비교 및 B·C안은 `noindex,nofollow`로 보존하며 홈페이지 메뉴에는 노출하지 않습니다. 기존 `concept-a.html` 공유 링크는 기본 홈페이지로 이동합니다.
+
+
+## 검색과 콘텐츠 유지보수
+
+`python3 -m unittest discover -s tests`로 검색 배포 검사를 실행합니다. `scripts/search.py`가 각 페이지의 제목·설명과 보이는 FAQ를 읽어 게시용 HTML에 공유 메타와 JSON-LD를 생성합니다. 업체 정보는 같은 파일의 `BUSINESS`에서 관리합니다. Google·네이버 소유권 확인 메타는 `index.html`에 보존합니다.
+
+- `sitemap.xml`: 메인·시설·수업 안내의 정규 URL 3개만 포함합니다.
+- `robots.txt`: 일반 검색과 AI 검색 크롤러의 공개 페이지 접근을 허용합니다.
+- `llms.txt`: 공개 정보를 간단히 정리한 보조 자료이며, AI 검색 등록이나 노출 보장 수단은 아닙니다.
+- FAQ의 원본은 `guide.html`입니다. JSON-LD를 별도로 수정하지 않습니다.
+- 주소·전화·예약·주차 정보 변경 시 메인, 시설, 수업 안내, `scripts/search.py`, `CONTENT_SOURCES.md`를 함께 확인합니다. 시간표·요금·휴무는 현재 공식 안내로 연결합니다.
+
+검색엔진 소유권 확인, 사이트맵 제출, 실제 색인 생성과 검색 노출은 서로 다른 단계입니다. 등록 이후에는 Search Console과 네이버 서치어드바이저에서 수집·색인 결과를 확인해야 합니다. 공개 원칙과 운영 기록은 `SEARCH.md`에 정리합니다.

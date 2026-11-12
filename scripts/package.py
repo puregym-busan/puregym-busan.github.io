@@ -8,10 +8,11 @@ import json
 import re
 import shutil
 import zipfile
+from search import prepare_search
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "publish"
-PAGES = ("index.html", "concept-a.html", "concept-b.html", "concept-c.html", "spaces.html", "proposals.html")
+PAGES = ("index.html", "concept-a.html", "concept-b.html", "concept-c.html", "spaces.html", "proposals.html", "guide.html")
 sources = json.loads((ROOT / "ASSET_SOURCES.json").read_text(encoding="utf-8"))
 photo_paths = [Path(item["file"]) for item in sources["assets"]]
 if any(path.parent != Path("assets") or path.suffix != ".jpg" for path in photo_paths):
@@ -50,7 +51,8 @@ for item in sources["assets"]:
     item["file"] = Path(item["file"]).name
 (OUTPUT / "ASSET_SOURCES.json").write_text(json.dumps(sources, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-allowlist = (*PAGES, *PHOTOS, "favicon.svg", "README.md", ".nojekyll", "ASSET_SOURCES.json")
+search_files = prepare_search(OUTPUT)
+allowlist = (*PAGES, *PHOTOS, "favicon.svg", "README.md", ".nojekyll", "ASSET_SOURCES.json", *search_files)
 unexpected = sorted(path.name for path in OUTPUT.iterdir() if path.name not in allowlist)
 if unexpected:
     raise ValueError(f"Unexpected publish files: {unexpected}")
