@@ -9,7 +9,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "publish"
-PAGES = ("index.html", "concept-a.html", "concept-b.html", "concept-c.html", "spaces.html")
+PAGES = ("index.html", "concept-a.html", "concept-b.html", "concept-c.html", "spaces.html", "proposals.html")
 sources = json.loads((ROOT / "ASSET_SOURCES.json").read_text(encoding="utf-8"))
 photo_paths = [Path(item["file"]) for item in sources["assets"]]
 if any(path.parent != Path("assets") or path.suffix != ".jpg" for path in photo_paths):
