@@ -30,7 +30,7 @@ class PublicationLinks(HTMLParser):
         for name, value in attrs:
             if name in ("href", "src", "action") and value:
                 if urlsplit(value).path.rstrip("/").endswith("/concept-a.html") or urlsplit(value).path == "concept-a.html":
-                    raise ValueError("Retired concept-a.html link: use index.html")
+                    raise ValueError("Retired concept-a.html link: use ./")
 
 for name in PAGES:
     source = (ROOT / name).read_text(encoding="utf-8")

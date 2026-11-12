@@ -6,6 +6,11 @@
   <meta name="theme-color" content="#f6f3ed">
   <meta name="description" content="부산 수영구 남천동 퓨어짐. 하이록스·웨이트·요가·바레 그룹수업, 소셜 사우나와 콜드 플런지. 남천역 인근 시설·1일 이용권·방문 안내를 확인하세요.">
   <title>퓨어짐 부산 | 남천동 하이록스·요가·바레 그룹운동</title>
+  <script>
+    if (location.pathname.endsWith('/index.html')) {
+      history.replaceState(history.state, '', './' + location.search + location.hash);
+    }
+  </script>
   <link rel="canonical" href="https://puregym-busan.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
@@ -171,7 +176,7 @@
       .hero{padding-top:48px;padding-bottom:70px}.hero-grid{gap:40px}.hero-display{font-size:76px}.hero-copy{padding-bottom:0}.hero h1{font-size:24px;margin-top:27px}.hero-description{font-size:16px}.hero-copy>.small-label{font-size:13px;margin-bottom:25px}.hero-photo .photo-link{aspect-ratio:.83}.hero-bottom{margin-top:40px}
       .training-bottom{gap:40px}.studio-grid{gap:40px}.studio-copy h2{font-size:65px}.studio-lead{font-size:20px}.studio-photo{aspect-ratio:.72}.recovery-grid{gap:70px}.recovery-photo:nth-child(2){margin-top:125px}.visit-grid{gap:44px}.section-header{gap:32px}
     }
-    @media(max-width:760px){
+    @media(max-width:1000px){
       html{scroll-padding-top:88px}
       .header-inner{height:auto;min-height:80px;flex-wrap:wrap;gap:0;padding-block:18px}
       .wordmark strong{font-size:26px}.wordmark span{font-size:10px;letter-spacing:.12em;margin-top:8px;padding-left:.12em}
@@ -183,6 +188,8 @@
       .js .site-nav.is-open a{font-size:24px;letter-spacing:-.04em;padding:23px 0;border-bottom:1px solid var(--line)}
       .js .site-nav.is-open .nav-contact{margin-top:20px;font-size:16px;border-bottom:1px solid var(--ink);justify-content:space-between}
       .menu-toggle[aria-expanded=true] .menu-open{display:none}.menu-toggle[aria-expanded=true] .menu-close{display:block}
+    }
+    @media(max-width:760px){
       .primary-link{font-size:16px}
       .hero{padding-top:42px;padding-bottom:64px}.hero-grid{grid-template-columns:1fr;gap:37px}.hero-copy>.small-label{margin-bottom:26px;font-size:13px}.hero-display{font-size:clamp(74px,16vw,108px);line-height:.95;letter-spacing:-.045em}.hero h1{font-size:25px;line-height:1.55;margin-top:29px}.hero-description{font-size:16px;line-height:1.9;margin-top:17px}.hero .primary-link{margin-top:25px;padding:14px 19px;min-height:50px;gap:32px}.hero-photo .photo-link{aspect-ratio:1/.99}
       .photo-caption{font-size:13px;letter-spacing:.09em;padding-top:13px;flex-wrap:wrap;gap:6px 14px;align-items:baseline}.photo-caption>span:not([lang]){font-size:17px;letter-spacing:0}
@@ -281,7 +288,7 @@
   <a class="skip-link" href="#main">본문 바로가기</a>
   <header class="site-header">
     <div class="header-inner wrap">
-      <a class="wordmark" href="index.html" aria-label="퓨어짐 부산 첫 화면">
+      <a class="wordmark" href="./" aria-label="퓨어짐 부산 첫 화면">
         <strong>PURE</strong><span>WELLNESS CENTER</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-nav" aria-expanded="false">
@@ -293,7 +300,7 @@
         <a href="#studio">요가 · 바레</a>
         <a href="#recovery">사우나 · 콜드 플런지</a>
         <a href="spaces.html">시설 둘러보기</a>
-        <a class="nav-contact" href="#visit">방문 안내 <span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="nav-contact" href="guide.html">수업 · 방문 안내 <span class="arrow" aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
@@ -540,7 +547,7 @@
 
   <footer class="site-footer wrap">
     <div class="footer-top">
-      <a class="wordmark" href="index.html" aria-label="퓨어짐 부산 첫 화면"><strong>PURE</strong><span>WELLNESS CENTER</span></a>
+      <a class="wordmark" href="./" aria-label="퓨어짐 부산 첫 화면"><strong>PURE</strong><span>WELLNESS CENTER</span></a>
       <p class="footer-phrase" lang="en">Perform Unlimited,<br>Rise Everyday.</p>
       <div class="footer-links">
         <a href="https://www.instagram.com/puregym.busan/" target="_blank" rel="noopener noreferrer"><svg class="channel-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><defs><linearGradient id="instagram-footer" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#d28b43"/><stop offset=".5" stop-color="#bd427c"/><stop offset="1" stop-color="#7851a9"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#instagram-footer)"/><rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="#fff" stroke-width="1.6"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="#fff" stroke-width="1.6"/><circle cx="16.7" cy="7.5" r="1" fill="#fff"/></svg>Instagram <span aria-hidden="true">↗</span><span class="sr-only"> (새 창)</span></a>
@@ -560,7 +567,7 @@
       document.documentElement.classList.add('js');
       const menu = document.querySelector('.menu-toggle');
       const nav = document.getElementById('primary-nav');
-      const mobile = window.matchMedia('(max-width: 760px)');
+      const mobile = window.matchMedia('(max-width: 1000px)');
       const menuBackground = [document.querySelector('main'), document.querySelector('footer'), document.querySelector('.header-inner .wordmark')];
       let menuOpen = false;
 
