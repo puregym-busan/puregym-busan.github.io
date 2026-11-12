@@ -258,13 +258,19 @@
       .start-actions{gap:17px 24px;margin-block:23px 29px}.guide-links>a{padding-block:19px}
       .access-guide{margin-top:28px}.access-guide>div{grid-template-columns:53px minmax(0,1fr);gap:12px;margin-top:20px}
     }
+    .recovery-moment{margin-bottom:62px}
+    .recovery-moment .photo-link{aspect-ratio:1.6}
+    .recovery-moment img{object-position:50% 80%}
+    .recovery-moment figcaption{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;padding-top:17px;font-size:17px;line-height:1.8}
+    .recovery-moment figcaption [lang]{font-size:12px;letter-spacing:.1em;color:var(--muted);align-self:center}
+    @media(max-width:760px){.recovery-moment{margin-bottom:38px}.recovery-moment .photo-link{aspect-ratio:1.1}.recovery-moment figcaption{font-size:16px;padding-top:14px;gap:4px 20px}}
   </style>
 </head>
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>
   <header class="site-header">
     <div class="header-inner wrap">
-      <a class="wordmark" href="#main" aria-label="퓨어짐 부산 첫 화면">
+      <a class="wordmark" href="index.html" aria-label="퓨어짐 부산 첫 화면">
         <strong>PURE</strong><span>WELLNESS CENTER</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-nav" aria-expanded="false">
@@ -402,6 +408,12 @@
           <p>따뜻한 사우나와 차가운 물.<br>서로 다른 두 공간에서 휴식을 만나보세요.</p>
         </div>
       </div>
+      <figure class="recovery-moment">
+        <a class="photo-link" href="assets/facility-sauna-together.jpg" data-photo="sauna-together" data-caption="함께 쉬는 소셜 사우나" aria-label="함께 쉬는 소셜 사우나 사진 크게 보기">
+          <img src="assets/facility-sauna-together.jpg" srcset="assets/facility-sauna-together-thumb.jpg 675w, assets/facility-sauna-together.jpg 1350w" sizes="(max-width: 760px) calc(100vw - 48px), 92vw" alt="퓨어짐 소셜 사우나의 나무 좌석에 함께 앉아 쉬는 사람들" width="1350" height="1800" loading="lazy" decoding="async">
+        </a>
+        <figcaption><span>운동 뒤, 함께 쉬어가는 시간.</span><span lang="en">SOCIAL SAUNA · PURE</span></figcaption>
+      </figure>
       <div class="recovery-grid">
         <figure class="recovery-photo">
           <a class="photo-link" href="assets/facility-sauna.jpg" data-photo="sauna" data-caption="소셜 사우나" aria-label="퓨어짐 소셜 사우나 사진 크게 보기">
@@ -516,7 +528,7 @@
 
   <footer class="site-footer wrap">
     <div class="footer-top">
-      <a class="wordmark" href="#main" aria-label="퓨어짐 부산 첫 화면"><strong>PURE</strong><span>WELLNESS CENTER</span></a>
+      <a class="wordmark" href="index.html" aria-label="퓨어짐 부산 첫 화면"><strong>PURE</strong><span>WELLNESS CENTER</span></a>
       <p class="footer-phrase" lang="en">Perform Unlimited,<br>Rise Everyday.</p>
       <div class="footer-links">
         <a href="https://www.instagram.com/puregym.busan/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span><span class="sr-only"> (새 창)</span></a>
@@ -529,7 +541,7 @@
   <dialog class="photo-dialog" id="photo-dialog" aria-labelledby="photo-title">
     <div class="dialog-top"><h2 id="photo-title">퓨어짐 공간</h2><button class="dialog-close" type="button" aria-label="사진 확대 보기 닫기">닫기 <span class="arrow" aria-hidden="true">×</span></button></div>
     <img class="dialog-image" id="dialog-image" src="assets/facility-recovery.jpg" alt="">
-    <div class="dialog-bottom"><button type="button" class="photo-previous" aria-label="이전 시설 사진">← 이전</button><span class="dialog-count" aria-live="polite">1 / 12</span><button type="button" class="photo-next" aria-label="다음 시설 사진">다음 →</button></div>
+    <div class="dialog-bottom"><button type="button" class="photo-previous" aria-label="이전 시설 사진">← 이전</button><span class="dialog-count" aria-live="polite">1 / 13</span><button type="button" class="photo-next" aria-label="다음 시설 사진">다음 →</button></div>
   </dialog>
   <script>
     (() => {

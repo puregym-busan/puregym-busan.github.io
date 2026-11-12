@@ -539,6 +539,58 @@
       "height": 900,
       "transform": "EXIF orientation applied; sRGB; proportional resize to max 900px; JPEG quality 80; metadata removed",
       "visual_verification": "시설 및 구도 확인; 원본 사진의 장면 변경 없음"
+    },
+    {
+      "file": "assets/facility-sauna-together.jpg",
+      "description": "함께 쉬는 소셜 사우나",
+      "source": "퓨어짐 코치 제공 · 사용자 카카오톡 전달",
+      "received_at": "2026-11-12",
+      "synthetic": false,
+      "original_sha256": "903ef4cb8398cbcc02b1ca473215ee72ae5734141c31b5a2a1e31b140c166f05",
+      "sha256": "93cd0d22a671526423f288b424d3dbc8529d992e0fff64c62c6d2bbbeb5ee845",
+      "width": 1350,
+      "height": 1800,
+      "transform": "EXIF orientation applied; sRGB; proportional resize to max 1800px; JPEG quality 86; metadata removed",
+      "visual_verification": "사우나·콜드 플런지 이용 장면 확인; 사용자 요청에 따라 포함; 원본 장면 변경 없음"
+    },
+    {
+      "file": "assets/facility-sauna-together-thumb.jpg",
+      "description": "함께 쉬는 소셜 사우나 — 썸네일",
+      "source": "퓨어짐 코치 제공 · 사용자 카카오톡 전달",
+      "received_at": "2026-11-12",
+      "synthetic": false,
+      "original_sha256": "903ef4cb8398cbcc02b1ca473215ee72ae5734141c31b5a2a1e31b140c166f05",
+      "sha256": "6a66b6b6509edd04a48948569bbc4b5a50139cb98dfaa487cb162fc07592b8b6",
+      "width": 675,
+      "height": 900,
+      "transform": "EXIF orientation applied; sRGB; proportional resize to max 900px; JPEG quality 80; metadata removed",
+      "visual_verification": "사우나·콜드 플런지 이용 장면 확인; 사용자 요청에 따라 포함; 원본 장면 변경 없음"
+    },
+    {
+      "file": "assets/facility-plunge-together.jpg",
+      "description": "콜드 플런지를 이용하는 모습",
+      "source": "퓨어짐 코치 제공 · 사용자 카카오톡 전달",
+      "received_at": "2026-11-12",
+      "synthetic": false,
+      "original_sha256": "f25366a7513046a3c0335d87c8b63a482d8c64ee2199710408273f524b906e5c",
+      "sha256": "e439b7839333af3ee24ab9a2483494435fe5af6b4a97406f38ecd212eca664da",
+      "width": 1350,
+      "height": 1800,
+      "transform": "EXIF orientation applied; sRGB; proportional resize to max 1800px; JPEG quality 86; metadata removed",
+      "visual_verification": "사우나·콜드 플런지 이용 장면 확인; 사용자 요청에 따라 포함; 원본 장면 변경 없음"
+    },
+    {
+      "file": "assets/facility-plunge-together-thumb.jpg",
+      "description": "콜드 플런지를 이용하는 모습 — 썸네일",
+      "source": "퓨어짐 코치 제공 · 사용자 카카오톡 전달",
+      "received_at": "2026-11-12",
+      "synthetic": false,
+      "original_sha256": "f25366a7513046a3c0335d87c8b63a482d8c64ee2199710408273f524b906e5c",
+      "sha256": "015d9b11e95742d89983bc67cf0f3c67833325bbd1e9ab6b920da57db176d9d4",
+      "width": 675,
+      "height": 900,
+      "transform": "EXIF orientation applied; sRGB; proportional resize to max 900px; JPEG quality 80; metadata removed",
+      "visual_verification": "사우나·콜드 플런지 이용 장면 확인; 사용자 요청에 따라 포함; 원본 장면 변경 없음"
     }
   ]
 }

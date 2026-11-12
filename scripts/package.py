@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Prepare the explicit, flat GitHub Pages files. No dependencies required."""
 from pathlib import Path
+from html.parser import HTMLParser
+from urllib.parse import urlsplit
 import hashlib
 import json
 import re
@@ -20,8 +22,18 @@ if len(set(PHOTOS)) != len(PHOTOS):
 OUTPUT.mkdir(exist_ok=True)
 (ROOT / "qa").mkdir(exist_ok=True)
 
+class PublicationLinks(HTMLParser):
+    """Keep the retired proposal URL out of current navigation and embeds."""
+
+    def handle_starttag(self, tag, attrs):
+        for name, value in attrs:
+            if name in ("href", "src", "action") and value:
+                if urlsplit(value).path.rstrip("/").endswith("/concept-a.html") or urlsplit(value).path == "concept-a.html":
+                    raise ValueError("Retired concept-a.html link: use index.html")
+
 for name in PAGES:
     source = (ROOT / name).read_text(encoding="utf-8")
+    PublicationLinks().feed(source)
     for photo in PHOTOS:
         source = source.replace("assets/" + photo, photo)
     if re.search(r"assets/[^\s\"'<>]+", source):
